@@ -35,5 +35,5 @@ jobs:
         run: |
           mkdir locTest
           cd locTest
-          ../configure 
+          ../configure --target-list=riscv64-linux-user,riscv64-softmmu
           make check .../
