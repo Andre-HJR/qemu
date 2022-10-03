@@ -27,13 +27,13 @@ jobs:
       
       - name: Ubuntu Need
         run: |
-          apt-get update -y,
-          apt-get install ninja-build -y.
+          apt-get update -y
+          apt-get install ninja-build -y
 
       # Runs a single command using the runners shell
       - name: Qemu localTest
         run: |
-          mkdir locTest,
-          cd locTest,
-          ../configure ,
-          make check .../.
+          mkdir locTest
+          cd locTest
+          ../configure 
+          make check .../
