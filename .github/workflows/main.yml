@@ -24,6 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Ubuntu Need
+        run: |
+          apt-get update -y,
+          apt-get install ninja-build -y.
 
       # Runs a single command using the runners shell
       - name: Qemu localTest
